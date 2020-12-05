@@ -1,3 +1,29 @@
 .navbar{
       z-index: 10;
 }
+
+h2 {
+      font-size: 40px;
+}
+
+.icon {
+      background-color: $primary;
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+      border-radius: 200px;
+      position: relative;
+
+      svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            fill: black;
+      }
+}
+
+textarea {
+      min-height: 120px;
+}
