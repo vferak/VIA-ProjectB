@@ -15,14 +15,66 @@ a:hover {
 a.navbar-brand:hover {
   color: #965823 !important;
 }
+a.navbar-brand:visited {
+  color: #be6f2c !important;
+}
 
 .btn-primary {
   background-color: #be6f2c !important;
   border-color: #be6f2c !important;
 }
 
+.bg-black {
+  background-color: black !important;
+}
+
+.dropdown-item:active {
+  background-color: #be6f2c !important;
+}
+
+html, body {
+  height: 100%;
+}
+
 .navbar {
   z-index: 10;
+  background-color: transparent;
+  transition: background-color 0.2s ease-out;
+}
+
+.carousel {
+  height: 95%;
+  min-height: 600px;
+  max-height: 800px;
+}
+.carousel .carousel-inner {
+  height: 100%;
+}
+.carousel .carousel-inner .carousel-item {
+  height: 100%;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.carousel .carousel-inner .carousel-item.carousel-item-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../data/storage/bg1.jpg");
+}
+.carousel .carousel-inner .carousel-item.carousel-item-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../data/storage/bg2.jpg");
+}
+.carousel .carousel-inner .carousel-item.carousel-item-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../data/storage/bg3.jpg");
+}
+.carousel .carousel-inner .carousel-item .carousel-item-inner {
+  margin: 0;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  transform: translateX(-25%) translateY(-25%);
+}
+.carousel .carousel-inner .carousel-item .carousel-item-inner p {
+  font-size: 35px;
 }
 
 h2 {
@@ -41,9 +93,19 @@ h2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   fill: black;
+}
+
+.galleryPhoto {
+  max-height: 200px;
+  overflow: hidden;
+}
+.galleryPhoto img {
+  transition: transform 0.2s;
+}
+.galleryPhoto img:hover {
+  transform: scale(1.2);
 }
 
 textarea {

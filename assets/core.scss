@@ -1,29 +1,94 @@
-.navbar{
-      z-index: 10;
+html, body {
+    height: 100%;
+}
+
+.navbar {
+    z-index: 10;
+    background-color: transparent;
+    transition: background-color 0.2s ease-out;
+}
+
+.carousel {
+    height: 95%;
+    min-height: 600px;
+    max-height: 800px;
+
+    .carousel-inner {
+        height: 100%;
+
+        .carousel-item {
+            height: 100%;
+            position: relative;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+
+            &.carousel-item-1 {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../data/storage/bg1.jpg");
+            }
+
+            &.carousel-item-2 {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../data/storage/bg2.jpg");
+            }
+
+            &.carousel-item-3 {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../data/storage/bg3.jpg");
+            }
+
+            .carousel-item-inner {
+                margin: 0;
+                position: absolute;
+                left: 25%;
+                top: 25%;
+                transform: translateX(-25%) translateY(-25%);
+
+                p {
+                    font-size: 35px;
+                }
+            }
+
+        }
+    }
+
+
 }
 
 h2 {
-      font-size: 40px;
+    font-size: 40px;
 }
 
 .icon {
-      background-color: $primary;
-      width: 150px;
-      height: 150px;
-      margin: 0 auto;
-      border-radius: 200px;
-      position: relative;
+    background-color: $primary;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 200px;
+    position: relative;
 
-      svg {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            fill: black;
-      }
+    svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        fill: black;
+    }
+}
+
+.galleryPhoto {
+    max-height: 200px;
+    overflow: hidden;
+
+
+    img {
+        transition: transform .2s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
 }
 
 textarea {
-      min-height: 120px;
+    min-height: 120px;
 }

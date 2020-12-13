@@ -2,26 +2,38 @@ $primary: #be6f2c;
 $primary-dark: #965823;
 
 .bg-primary {
-  background-color: $primary !important;
+    background-color: $primary !important;
 }
 
 .text-primary {
-  color: $primary !important;
+    color: $primary !important;
 }
 
 a {
-  color: $primary;
+    color: $primary;
 
-  &:hover {
-    color: $primary-dark;
-  }
+    &:hover {
+        color: $primary-dark;
+    }
 
-  &.navbar-brand:hover {
-    color: $primary-dark !important;
-  }
+    &.navbar-brand:hover {
+        color: $primary-dark !important;
+    }
+
+    &.navbar-brand:visited {
+        color: $primary !important;
+    }
 }
 
 .btn-primary {
-  background-color: $primary !important;
-  border-color: $primary !important;
+    background-color: $primary !important;
+    border-color: $primary !important;
+}
+
+.bg-black {
+    background-color: black !important;
+}
+
+.dropdown-item:active {
+    background-color: $primary !important;
 }
