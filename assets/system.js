@@ -1,15 +1,15 @@
 (function ($) {
     "use strict";
 
-    var nav = $('.navbar');
-    var navBgThreshold = 99;
+    let nav = $('.navbar');
+    let navBgThreshold = 99;
 
     if ($(window).scrollTop() > navBgThreshold) {
         nav.addClass("bg-black");
     }
 
     $(window).on('scroll', function () {
-        var currentTop = $(window).scrollTop();
+        let currentTop = $(window).scrollTop();
 
         if (currentTop > navBgThreshold) {
             nav.addClass("bg-black");
